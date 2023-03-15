@@ -5,6 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Class */
 .game-board{
     width: 100%;
     height: 500px;
@@ -18,6 +19,7 @@
 }
 
 .mario{
+    cursor: pointer;
     width: 120px;
     position: absolute;
     bottom: 0;
@@ -46,6 +48,13 @@
 }
 
 
+
+
+
+
+/* Path: css\animation.css */
+
+
 @keyframes pipe-animation{
     from{
         right: -80px;
@@ -56,40 +65,25 @@
 }
 
 
+
 @keyframes jump{
     0%{
         bottom: 0px;
         background: none;
 
-
     }
 
     40%{
         bottom: 180px;
-        background: none;
-        width: 56px;
-
-        background: url(../images/mario_jump.png);
-
 
     }  
 
     50%{
         bottom: 180px;
-        background: none;
-        width: 56px;
-
-        background: url(../images/mario_jump.png);
-
-
 
     }
     60%{
         bottom: 180px;
-        background: none;
-        width: 56px;
-
-        background: url(../images/mario_jump.png);
 
     }
 
@@ -106,3 +100,4 @@
         right: 100%;
     }
 }
+

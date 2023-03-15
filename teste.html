@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo de animação com keyframes em CSS</title>
+  <style>
+    .my-element {
+      background-image: url('imagem1.jpg');
+      width: 500px;
+      height: 500px;
+      animation-name: alterna-imagens;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes alterna-imagens {
+      0% {
+        background-image: url('imagem1.jpg');
+      }
+      50% {
+        background-image: url('imagem2.jpg');
+
+      }
+      100% {
+        background-image: url('imagem1.jpg');
+
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="my-element"></div>
+</body>
+</html>
