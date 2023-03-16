@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+        <title>Mario Jump</title>
+    </head>
+    <body>
+        <audio id="myAudio" autoplay>
+            <source src="mp3/mario_sound.mp3" type="audio/mpeg">
+        </audio> 
+        <div class="game-board">
+            <div id="timer">00:00</div>
+            <p>Pontuação: <span id="score">00</span></p>
+            <img src="images/clouds.png" class="clouds" alt="cloud">
+            <img src="images/Pipe.webp" class="pipe" alt="pipe">
+            <img src="images/mario.gif" class="mario" alt="mario"> 
+        </div>
 
-    <title>Maria Jump</title>
-</head>
-<body>
-    
-    <div class="game-board">
-        <img src="images/clouds.png" class="clouds" alt="cloud">
+        <footer>
+            <div class="footer-content">
+              <p>Desenvolvido por Ilton Batista - 15/03/2023</p>
 
-        <img src="images/Pipe.webp" class="pipe" alt="pipe">
-        <img src="images/mario.gif" class="mario" alt="mario">
-
-
-
-    </div>
-    
-</body>
-
-
+            </div>
+          </footer>
+    </body>
 </html>
