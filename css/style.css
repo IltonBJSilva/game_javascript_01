@@ -5,38 +5,43 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Tags */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 2px solid #ffcc00;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Class */
 .game-board{
-    width: 100%;
-    height: 500px;
+    width: 100%; 
+    height: 580px;
     border-bottom: 15px solid green;
+    background: linear-gradient(#87CEEB, #E0F6FF);
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#87CEEB, #E0F6FF);
-
 
 }
-
 .mario{
     cursor: pointer;
     width: 120px;
     position: absolute;
     bottom: 0;
-
-
 }
-
-
-
 .pipe{
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s linear infinite;
+    animation: pipe-animation 1.7s linear infinite;
 
 }
-
 .jump{
     animation: jump 500ms ease-out;
 }
@@ -46,15 +51,34 @@
     position: absolute;
     animation: clouds-animation 10s infinite linear;
 }
-
-
-
-
-
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 0 10px;
+  }
+  
+  .footer-content p:first-child {
+    font-weight: bold;
+  }
+/* IDs */
+#timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
 
 /* Path: css\animation.css */
-
-
 @keyframes pipe-animation{
     from{
         right: -80px;
@@ -63,35 +87,24 @@
         right: 100%;
     }
 }
-
-
-
 @keyframes jump{
     0%{
         bottom: 0px;
         background: none;
-
     }
-
     40%{
         bottom: 180px;
-
-    }  
-
+    }
     50%{
         bottom: 180px;
-
     }
     60%{
         bottom: 180px;
-
     }
-
     100%{
         bottom: 0px;
     }
 }
-
 @keyframes clouds-animation{
     from{
         right: 0;
@@ -100,4 +113,3 @@
         right: 100%;
     }
 }
-
